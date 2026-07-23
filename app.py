@@ -1,84 +1,54 @@
-import json
-import random
+"""
+app.py – Streamlit wrapper that serves the built React application.
+
+Deployment steps:
+  1. npm install
+  2. npm run build          (creates ./dist/)
+  3. streamlit run app.py
+"""
+import os
 import streamlit as st
+import streamlit.components.v1 as components
 
-# Load quotes data
-with open('Harsh_quotes_app_quotes.json', 'r', encoding='utf-8') as f:
-    quotes = json.load(f)
+# ── Page config ─────────────────────────────────────────────────
+st.set_page_config(
+    page_title="Random Quote Generator",
+    page_icon="📜",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
-# Helper to get a random quote, avoiding immediate repeat
-def get_random_quote(pool, previous_id=None):
-    if not pool:
-        return None
-    if len(pool) == 1:
-        return pool[0]
-    nxt = random.choice(pool)
-    while previous_id is not None and nxt['id'] == previous_id:
-        nxt = random.choice(pool)
-    return nxt
+# ── Hide Streamlit chrome so the React app fills the viewport ────
+st.markdown(
+    """
+    <style>
+      #MainMenu, header, footer { visibility: hidden; }
+      .block-container { padding: 0 !important; max-width: 100% !important; }
+      iframe { display: block; border: none; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
-# Initialize session state
-if 'current_quote' not in st.session_state:
-    st.session_state.current_quote = get_random_quote(quotes)
-if 'favorites' not in st.session_state:
-    st.session_state.favorites = []
-if 'category' not in st.session_state:
-    st.session_state.category = 'All'
-if 'search' not in st.session_state:
-    st.session_state.search = ''
+# ── Load the built React app from ./dist/index.html ─────────────
+DIST_DIR = os.path.join(os.path.dirname(__file__), "dist")
+INDEX_HTML = os.path.join(DIST_DIR, "index.html")
 
-# UI layout
-st.title('📜 Random Quote Generator')
+if not os.path.exists(INDEX_HTML):
+    st.error(
+        "🚧 **Production build not found.**\n\n"
+        "Please run the following commands first:\n\n"
+        "```bash\n"
+        "npm install\n"
+        "npm run build\n"
+        "```\n\n"
+        "Then restart the Streamlit app."
+    )
+    st.stop()
 
-# Controls
-col1, col2 = st.columns(2)
-with col1:
-    categories = ['All'] + sorted({q['category'] for q in quotes})
-    st.session_state.category = st.selectbox('Category', categories, index=categories.index(st.session_state.category))
-with col2:
-    st.session_state.search = st.text_input('Search (author or text)', st.session_state.search)
+# Read the built HTML and inline the base URL so assets resolve correctly
+with open(INDEX_HTML, "r", encoding="utf-8") as f:
+    html_content = f.read()
 
-# Filter quotes based on controls
-def filter_quotes():
-    filtered = quotes
-    if st.session_state.category != 'All':
-        filtered = [q for q in filtered if q['category'] == st.session_state.category]
-    term = st.session_state.search.strip().lower()
-    if term:
-        filtered = [q for q in filtered if term in q['text'].lower() or term in q['author'].lower()]
-    return filtered
-
-filtered_quotes = filter_quotes()
-
-# Update current quote if the filter changed
-if st.session_state.current_quote not in filtered_quotes:
-    st.session_state.current_quote = get_random_quote(filtered_quotes)
-
-# Quote display
-if st.session_state.current_quote:
-    q = st.session_state.current_quote
-    st.markdown(f"### {q['text']}\n*— {q['author']}*  
-**Category:** {q['category']}")
-    # Favorite toggle
-    fav = q['id'] in st.session_state.favorites
-    if st.button('⭐ Remove from Favorites' if fav else '⭐ Add to Favorites'):
-        if fav:
-            st.session_state.favorites.remove(q['id'])
-        else:
-            st.session_state.favorites.append(q['id'])
-else:
-    st.info('No quotes match the current filters.')
-
-# New quote button
-if st.button('New Quote'):
-    st.session_state.current_quote = get_random_quote(filtered_quotes, st.session_state.current_quote.get('id') if st.session_state.current_quote else None)
-
-st.divider()
-# Favorites panel
-st.subheader('💖 Favorite Quotes')
-if st.session_state.favorites:
-    fav_quotes = [q for q in quotes if q['id'] in st.session_state.favorites]
-    for fq in fav_quotes:
-        st.markdown(f"- **{fq['text']}** — *{fq['author']}* (_{fq['category']}_) ")
-else:
-    st.info('No favorites yet. Click the star button on a quote to add it.')
+# Serve the React app inside a full-height iframe
+components.html(html_content, height=900, scrolling=True)
