@@ -23,8 +23,9 @@ st.markdown(
     """
     <style>
       #MainMenu, header, footer { visibility: hidden; }
-      .block-container { padding: 0 !important; max-width: 100% !important; }
-      iframe { display: block; border: none; }
+      .block-container { padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+      .stAppViewContainer { padding: 0 !important; }
+      iframe { display: block; border: none; width: 100%; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -46,9 +47,9 @@ if not os.path.exists(INDEX_HTML):
     )
     st.stop()
 
-# Read the built HTML and inline the base URL so assets resolve correctly
+# Read the built HTML and serve it
 with open(INDEX_HTML, "r", encoding="utf-8") as f:
     html_content = f.read()
 
-# Serve the React app inside a full-height iframe
-components.html(html_content, height=900, scrolling=True)
+# Serve the React app with proper height
+components.html(html_content, height=1200, scrolling=True)
