@@ -1,0 +1,10 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output – commit dist/ so Streamlit Cloud can serve it
+# dist/
+
+# Misc
+.DS_Store
+*.local
