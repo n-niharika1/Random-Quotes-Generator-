@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "text": "Success is the sum of small efforts repeated day in and day out.",
+    "author": "Robert Collier",
+    "category": "Success"
+  },
+  {
+    "id": 2,
+    "text": "The future depends on what you do today.",
+    "author": "Mahatma Gandhi",
+    "category": "Motivation"
+  },
+  {
+    "id": 3,
+    "text": "Technology is best when it brings people together.",
+    "author": "Matt Mullenweg",
+    "category": "Technology"
+  },
+  {
+    "id": 4,
+    "text": "Life is really simple, but we insist on making it complicated.",
+    "author": "Confucius",
+    "category": "Life"
+  },
+  {
+    "id": 5,
+    "text": "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+    "author": "Malcolm X",
+    "category": "Education"
+  },
+  {
+    "id": 6,
+    "text": "Don’t watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "category": "Motivation"
+  },
+  {
+    "id": 7,
+    "text": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "category": "Success"
+  },
+  {
+    "id": 8,
+    "text": "Any sufficiently advanced technology is indistinguishable from magic.",
+    "author": "Arthur C. Clarke",
+    "category": "Technology"
+  },
+  {
+    "id": 9,
+    "text": "In the middle of every difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "category": "Life"
+  },
+  {
+    "id": 10,
+    "text": "The beautiful thing about learning is that no one can take it away from you.",
+    "author": "B. B. King",
+    "category": "Education"
+  },
+  {
+    "id": 11,
+    "text": "Your limitation—it’s only your imagination.",
+    "author": "Unknown",
+    "category": "Motivation"
+  },
+  {
+    "id": 12,
+    "text": "Opportunities don't happen. You create them.",
+    "author": "Chris Grosser",
+    "category": "Success"
+  },
+  {
+    "id": 13,
+    "text": "The science of today is the technology of tomorrow.",
+    "author": "Edward Teller",
+    "category": "Technology"
+  },
+  {
+    "id": 14,
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "Life"
+  },
+  {
+    "id": 15,
+    "text": "An investment in knowledge pays the best interest.",
+    "author": "Benjamin Franklin",
+    "category": "Education"
+  }
+]
