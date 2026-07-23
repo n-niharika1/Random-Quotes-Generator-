@@ -17,10 +17,10 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(ellipse at 20% 0%, rgba(139, 92, 246, 0.25) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 0%, rgba(59, 130, 246, 0.22) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 100%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
-    linear-gradient(180deg, #0f172a 0%, #020617 100%);
+    radial-gradient(ellipse at 20% 0%, rgba(225, 29, 72, 0.20) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 0%, rgba(249, 115, 22, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #1f0b12 0%, #0f0307 100%);
   min-height: 100vh;
 }
 
@@ -74,7 +74,7 @@ button { cursor: pointer; }
   margin: 0;
   font-size: clamp(2rem, 5vw, 3.4rem);
   line-height: 1.1;
-  background: linear-gradient(135deg, #f8fafc 30%, #93c5fd 70%, #a78bfa 100%);
+  background: linear-gradient(135deg, #fff1f2 30%, #fda4af 70%, #f43f5e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -161,11 +161,11 @@ button { cursor: pointer; }
   text-transform: uppercase;
 }
 
-.badge-motivation  { background: rgba(251,191,36,0.15); color: #fcd34d; }
-.badge-success     { background: rgba(16,185,129,0.15);  color: #6ee7b7; }
-.badge-technology  { background: rgba(59,130,246,0.15);  color: #93c5fd; }
-.badge-life        { background: rgba(236,72,153,0.15);  color: #f9a8d4; }
-.badge-education   { background: rgba(139,92,246,0.15);  color: #c4b5fd; }
+.badge-creativity  { background: rgba(236,72,153,0.15); color: #f9a8d4; }
+.badge-leadership  { background: rgba(251,146,60,0.15);  color: #fdba74; }
+.badge-philosophy  { background: rgba(167,139,250,0.15); color: #c4b5fd; }
+.badge-wisdom      { background: rgba(52,211,153,0.15);  color: #6ee7b7; }
+.badge-humour      { background: rgba(250,204,21,0.15);  color: #fef08a; }
 .badge-default     { background: rgba(148,163,184,0.15); color: #cbd5e1; }
 
 /* Favorite toggle button */
@@ -191,7 +191,7 @@ blockquote {
   font-style: italic;
   position: relative;
   padding-left: 6px;
-  border-left: 3px solid rgba(129, 140, 248, 0.5);
+  border-left: 3px solid rgba(244, 63, 94, 0.5);
 }
 
 /* Quote meta */
@@ -212,17 +212,17 @@ blockquote {
   border: 0;
   border-radius: 14px;
   padding: 14px 28px;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #f43f5e, #f97316);
   color: white;
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.35);
 }
 .primary-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45);
+  box-shadow: 0 8px 25px rgba(244, 63, 94, 0.45);
 }
 .primary-button:disabled { opacity: 0.45; cursor: not-allowed; }
 

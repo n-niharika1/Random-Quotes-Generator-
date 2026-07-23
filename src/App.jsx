@@ -7,11 +7,11 @@ const ALL = 'All'
 /** Returns a CSS class name based on category for colour-coded badges */
 const badgeClass = (category) => {
   const map = {
-    Motivation: 'badge-motivation',
-    Success:    'badge-success',
-    Technology: 'badge-technology',
-    Life:       'badge-life',
-    Education:  'badge-education',
+    Creativity: 'badge-creativity',
+    Leadership: 'badge-leadership',
+    Philosophy: 'badge-philosophy',
+    Wisdom:     'badge-wisdom',
+    Humour:     'badge-humour',
   }
   return map[category] ?? 'badge-default'
 }
@@ -86,11 +86,11 @@ function App() {
 
         {/* ── Hero ─── */}
         <header className="hero">
-          <p className="eyebrow">✦ React Frontend Project</p>
-          <h1>Random Quote Generator</h1>
+          <p className="eyebrow">✦ Inspire Your Day</p>
+          <h1>Niharika's Quote Hub</h1>
           <p className="hero-text">
-            Discover inspiring quotes across five categories. Filter, search
-            instantly, and save your favourites — all without a backend.
+            Explore words of wisdom across five unique categories. Filter, search,
+            and collect your favourite quotes seamlessly.
           </p>
         </header>
 

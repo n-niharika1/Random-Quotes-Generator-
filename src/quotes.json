@@ -1,57 +1,98 @@
 [
-  { "id": 1,  "text": "Success is the sum of small efforts repeated day in and day out.", "author": "Robert Collier", "category": "Success" },
-  { "id": 2,  "text": "The future depends on what you do today.", "author": "Mahatma Gandhi", "category": "Motivation" },
-  { "id": 3,  "text": "Technology is best when it brings people together.", "author": "Matt Mullenweg", "category": "Technology" },
-  { "id": 4,  "text": "Life is really simple, but we insist on making it complicated.", "author": "Confucius", "category": "Life" },
-  { "id": 5,  "text": "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.", "author": "Malcolm X", "category": "Education" },
-  { "id": 6,  "text": "Don't watch the clock; do what it does. Keep going.", "author": "Sam Levenson", "category": "Motivation" },
-  { "id": 7,  "text": "Success usually comes to those who are too busy to be looking for it.", "author": "Henry David Thoreau", "category": "Success" },
-  { "id": 8,  "text": "Any sufficiently advanced technology is indistinguishable from magic.", "author": "Arthur C. Clarke", "category": "Technology" },
-  { "id": 9,  "text": "In the middle of every difficulty lies opportunity.", "author": "Albert Einstein", "category": "Life" },
-  { "id": 10, "text": "The beautiful thing about learning is that no one can take it away from you.", "author": "B. B. King", "category": "Education" },
-  { "id": 11, "text": "Your limitation—it's only your imagination.", "author": "Unknown", "category": "Motivation" },
-  { "id": 12, "text": "Opportunities don't happen. You create them.", "author": "Chris Grosser", "category": "Success" },
-  { "id": 13, "text": "The science of today is the technology of tomorrow.", "author": "Edward Teller", "category": "Technology" },
-  { "id": 14, "text": "Life is what happens when you're busy making other plans.", "author": "John Lennon", "category": "Life" },
-  { "id": 15, "text": "An investment in knowledge pays the best interest.", "author": "Benjamin Franklin", "category": "Education" },
-  { "id": 16, "text": "Push yourself, because no one else is going to do it for you.", "author": "Unknown", "category": "Motivation" },
-  { "id": 17, "text": "Great things never come from comfort zones.", "author": "Unknown", "category": "Motivation" },
-  { "id": 18, "text": "Dream it. Wish it. Do it.", "author": "Unknown", "category": "Motivation" },
-  { "id": 19, "text": "Work hard in silence, let your success be the noise.", "author": "Frank Ocean", "category": "Success" },
-  { "id": 20, "text": "Don't stop when you're tired. Stop when you're done.", "author": "Unknown", "category": "Motivation" },
-  { "id": 21, "text": "It always seems impossible until it's done.", "author": "Nelson Mandela", "category": "Motivation" },
-  { "id": 22, "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill", "category": "Success" },
-  { "id": 23, "text": "The secret of getting ahead is getting started.", "author": "Mark Twain", "category": "Success" },
-  { "id": 24, "text": "Innovation distinguishes between a leader and a follower.", "author": "Steve Jobs", "category": "Technology" },
-  { "id": 25, "text": "The real danger is not that computers will begin to think like men, but that men will begin to think like computers.", "author": "Sydney J. Harris", "category": "Technology" },
-  { "id": 26, "text": "The advance of technology is based on making it fit in so that you don't really even notice it.", "author": "Bill Gates", "category": "Technology" },
-  { "id": 27, "text": "Software is a great combination between artistry and engineering.", "author": "Bill Gates", "category": "Technology" },
-  { "id": 28, "text": "The computer was born to solve problems that did not exist before.", "author": "Bill Gates", "category": "Technology" },
-  { "id": 29, "text": "Life is short, and it is here to be lived.", "author": "Kate Winslet", "category": "Life" },
-  { "id": 30, "text": "In three words I can sum up everything I've learned about life: it goes on.", "author": "Robert Frost", "category": "Life" },
-  { "id": 31, "text": "Life is either a daring adventure or nothing at all.", "author": "Helen Keller", "category": "Life" },
-  { "id": 32, "text": "Get busy living or get busy dying.", "author": "Stephen King", "category": "Life" },
-  { "id": 33, "text": "You only live once, but if you do it right, once is enough.", "author": "Mae West", "category": "Life" },
-  { "id": 34, "text": "Tell me and I forget. Teach me and I remember. Involve me and I learn.", "author": "Benjamin Franklin", "category": "Education" },
-  { "id": 35, "text": "Education is not the filling of a pail, but the lighting of a fire.", "author": "W.B. Yeats", "category": "Education" },
-  { "id": 36, "text": "The more that you read, the more things you will know.", "author": "Dr. Seuss", "category": "Education" },
-  { "id": 37, "text": "Live as if you were to die tomorrow. Learn as if you were to live forever.", "author": "Mahatma Gandhi", "category": "Education" },
-  { "id": 38, "text": "Education is the most powerful weapon which you can use to change the world.", "author": "Nelson Mandela", "category": "Education" },
-  { "id": 39, "text": "Winning isn't everything, but wanting to win is.", "author": "Vince Lombardi", "category": "Success" },
-  { "id": 40, "text": "I find that the harder I work, the more luck I seem to have.", "author": "Thomas Jefferson", "category": "Success" },
-  { "id": 41, "text": "There are no shortcuts to any place worth going.", "author": "Beverly Sills", "category": "Success" },
-  { "id": 42, "text": "Believe you can and you're halfway there.", "author": "Theodore Roosevelt", "category": "Motivation" },
-  { "id": 43, "text": "Act as if what you do makes a difference. It does.", "author": "William James", "category": "Motivation" },
-  { "id": 44, "text": "Success is walking from failure to failure with no loss of enthusiasm.", "author": "Winston Churchill", "category": "Success" },
-  { "id": 45, "text": "Just when the caterpillar thought the world was ending, he turned into a butterfly.", "author": "Proverb", "category": "Life" },
-  { "id": 46, "text": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius", "category": "Motivation" },
-  { "id": 47, "text": "Everything you've ever wanted is on the other side of fear.", "author": "George Addair", "category": "Motivation" },
-  { "id": 48, "text": "We generate fears while we sit. We overcome them by action.", "author": "Dr. Henry Link", "category": "Motivation" },
-  { "id": 49, "text": "Hardships often prepare ordinary people for an extraordinary destiny.", "author": "C.S. Lewis", "category": "Life" },
-  { "id": 50, "text": "Knowing is not enough; we must apply. Willing is not enough; we must do.", "author": "Johann Wolfgang von Goethe", "category": "Education" },
-  { "id": 51, "text": "You don't have to be great to start, but you have to start to be great.", "author": "Zig Ziglar", "category": "Motivation" },
-  { "id": 52, "text": "The only way to do great work is to love what you do.", "author": "Steve Jobs", "category": "Success" },
-  { "id": 53, "text": "Stay hungry, stay foolish.", "author": "Steve Jobs", "category": "Motivation" },
-  { "id": 54, "text": "The best time to plant a tree was 20 years ago. The second best time is now.", "author": "Chinese Proverb", "category": "Life" },
-  { "id": 55, "text": "Artificial intelligence is the new electricity.", "author": "Andrew Ng", "category": "Technology" }
+  {
+    "id": "q1",
+    "text": "Creativity is intelligence having fun.",
+    "author": "Albert Einstein",
+    "category": "Creativity"
+  },
+  {
+    "id": "q2",
+    "text": "The true sign of intelligence is not knowledge but imagination.",
+    "author": "Albert Einstein",
+    "category": "Creativity"
+  },
+  {
+    "id": "q3",
+    "text": "Leadership is the capacity to translate vision into reality.",
+    "author": "Warren Bennis",
+    "category": "Leadership"
+  },
+  {
+    "id": "q4",
+    "text": "Before you are a leader, success is all about growing yourself. When you become a leader, success is all about growing others.",
+    "author": "Jack Welch",
+    "category": "Leadership"
+  },
+  {
+    "id": "q5",
+    "text": "The unexamined life is not worth living.",
+    "author": "Socrates",
+    "category": "Philosophy"
+  },
+  {
+    "id": "q6",
+    "text": "I can control my passions and emotions if I can understand their nature.",
+    "author": "Spinoza",
+    "category": "Philosophy"
+  },
+  {
+    "id": "q7",
+    "text": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas A. Edison",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q8",
+    "text": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q9",
+    "text": "A day without sunshine is like, you know, night.",
+    "author": "Steve Martin",
+    "category": "Humour"
+  },
+  {
+    "id": "q10",
+    "text": "I love deadlines. I love the whooshing noise they make as they go by.",
+    "author": "Douglas Adams",
+    "category": "Humour"
+  },
+  {
+    "id": "q11",
+    "text": "You can't use up creativity. The more you use, the more you have.",
+    "author": "Maya Angelou",
+    "category": "Creativity"
+  },
+  {
+    "id": "q12",
+    "text": "Innovation distinguishes between a leader and a follower.",
+    "author": "Steve Jobs",
+    "category": "Leadership"
+  },
+  {
+    "id": "q13",
+    "text": "Life is really simple, but we insist on making it complicated.",
+    "author": "Confucius",
+    "category": "Philosophy"
+  },
+  {
+    "id": "q14",
+    "text": "Wisdom is not a product of schooling but of the lifelong attempt to acquire it.",
+    "author": "Albert Einstein",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q15",
+    "text": "Always borrow money from a pessimist. He won’t expect it back.",
+    "author": "Oscar Wilde",
+    "category": "Humour"
+  },
+  {
+    "id": "q16",
+    "text": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Philosophy"
+  }
 ]
